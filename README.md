@@ -1,2 +1,2 @@
 # node-auth
-Node Authentication with JavaScript Web Tokens
+Node Authentication with JSON Web Tokens
