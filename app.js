@@ -15,14 +15,12 @@ app.use(express.json());
 app.use(cookieParser());
 
 // DB Connection
-const dbURI = '<enter database credentials here';
+const dbURI = '<enter database credentials here>';
+//const dbURI = '<enter database credentials here>';
 //const dbURI = '<Enter mongodb database credentials here';
 mongoose.connect(dbURI, { useNewUrlParser: true, useUnifiedTopology: true  })
   .then((result) => app.listen(3000))
   .catch((err) => console.log(err));
-
-console.log('connected to db');
-
 
 
 // Routes
